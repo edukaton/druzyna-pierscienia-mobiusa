@@ -6,7 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./quiz-screen.component.css']
 })
 export class QuizScreenComponent implements OnInit {
+  
+  currentQuestion:number=0;
 
+  changeQuestion(increment:number){
+    this.currentQuestion+=increment;
+  }
+  
   constructor() { }
 
   ngOnInit() {
