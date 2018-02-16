@@ -1,25 +1,27 @@
+<div class="container-fluid">
 
-<div clas="container">
-  <nav class="navbar navbar-light bg-light">
-      <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">Disabled</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+      <nav class="navbar navbar-light bg-faded navbar-inverse bg-primary navbar-toggleable-sm" style="border-bottom: 1px solid rgba(0, 0, 0, 0.125)">
+          <a class="navbar-brand" href="#"></a>
+            <ul class="navbar-nav mr-auto mt-2 mt-md-0">
+              <li class="nav-item active">
+                <a [routerLink]="['/start']" class="nav-link" href="#">start <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a [routerLink]="['/quiz']" class="nav-link" >quiz</a>
+              </li>
+              <li class="nav-item">
+                  <a [routerLink]="['/end']" class="nav-link" >koniec</a>
+              </li>
+
+            </ul>
+
+        </nav>
+  <router-outlet></router-outlet>
+  <!-- <pm-competitions></pm-competitions>
+  <pm-applications></pm-applications>
+  <pm-assessors></pm-assessors> -->
+
+  <div class="card card-header rounded-0 border-top-0">
+      <a href="#">footer</a>
+  </div>
 </div>
