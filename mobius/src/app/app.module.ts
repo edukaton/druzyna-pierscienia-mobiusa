@@ -22,7 +22,7 @@ import { EndScreenComponent } from './end-screen/end-screen.component';
     RouterModule.forRoot([
       {path:'start', component:StartScreenComponent},
       {path:'quiz', component:QuizScreenComponent},
-      {path:'koniec', component:EndScreenComponent},
+      {path:'end', component:EndScreenComponent},
       {path:'', redirectTo :'start', pathMatch:'full' },
       {path:'**', redirectTo :'start', pathMatch:'full' },
     ])
