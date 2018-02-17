@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { Question } from '../question';
 import { QUESTIONS } from '../questions';
 
+const DELAY = 3000;
+
 @Component({
   selector: 'app-quiz-screen',
   templateUrl: './quiz-screen.component.html',
@@ -44,33 +46,41 @@ export class QuizScreenComponent implements OnInit {
         person: "Twoja Mama",
         text: "Jacusiu, a co o Tym sądzisz?"
       });
-    }, 2000);
+    }, DELAY);
 
-    window.setTimeout(() => { this.showAnswers = true; }, 4000);
+    window.setTimeout(() => { this.showAnswers = true; }, 2 * DELAY);
   }
 
   pickAnswer(answer) {
+
+    this.showAnswers = false;
 
     this.comments.push({
       person: "Ty",
       text: answer.text
     });
-    this.comments.push({
-      person: "Wujek Mietek",
-      text: answer.reply
-    });
+
+    setTimeout(() => {
+      this.comments.push({
+        person: "Wujek Mietek",
+        text: answer.reply
+      });
+    }, DELAY);
 
     this.activeAnswers = this.activeAnswers
       .filter((x) => x.text != answer.text);
 
-    this.score += (2 * answer.correct - 1);
-    this.correctAnswersLeft -= answer.correct;
-    if (this.correctAnswersLeft == 0) {
-      this.showAnswers = false;
-      this.showConclusion = true;
-    }
-  }
+    setTimeout(() => {
+      this.score += (2 * answer.correct - 1);
+      this.correctAnswersLeft -= answer.correct;
+      if (this.correctAnswersLeft == 0) {
+        this.showConclusion = true;
+      } else {
+        this.showAnswers = true;
+      }
+    }, 2 * DELAY);
 
+  }
 
   ngOnInit() {
   }
