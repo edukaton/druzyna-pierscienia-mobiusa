@@ -34,15 +34,15 @@ export const QUESTIONS: Question[] = [
     ],
     conclusion: "Odpowiedź c i e): Tu są dwa główne problemy. Często politycy udają że ich oponenci powiedzieli coś dużo bardziej radykalnego, żeby łatwiej z tym dyskutować. Często też ludzie udają że są tylko dwie opcje do wyboru. Na przykład fajnie by było na początku tej gry mieć jakieś inne opcje do wyboru niż Kaczor i Donald. ;)"
   },
-  {
-    person: "Leszek Miller",
-    post: "Kiedy wyszło na jaw, że w Polsce były tajne więzienia w których CIA torturowało więźniów pojmanych w Iraku, Leszek Miller bronił swojej decyzji mówiąc: “Albo jesteśmy po stronie ofiar, albo morderców.”",
-    source: "https://www.tvn24.pl/wiadomosci-z-kraju,3/spor-o-tajne-wiezienia-cia-miller-albo-jestesmy-po-stronie-ofiar-albo-mordercow,391389.html",
-    answers: [
-      "Zakłada, że w więzieniu są tylko mordercy",
-      "Zakłada, że jak ktoś jest przeciwko torturom to jest po stronie morderców",
-      "Zakłada, że jak budujemy więzienia to jesteśmy po stronie morderców"
-    ],
-    conclusion: "XXX to coś będzie XXX"
-  }
+  // {
+  //   person: "Leszek Miller",
+  //   post: "Kiedy wyszło na jaw, że w Polsce były tajne więzienia w których CIA torturowało więźniów pojmanych w Iraku, Leszek Miller bronił swojej decyzji mówiąc: “Albo jesteśmy po stronie ofiar, albo morderców.”",
+  //   source: "https://www.tvn24.pl/wiadomosci-z-kraju,3/spor-o-tajne-wiezienia-cia-miller-albo-jestesmy-po-stronie-ofiar-albo-mordercow,391389.html",
+  //   answers: [
+  //     "Zakłada, że w więzieniu są tylko mordercy",
+  //     "Zakłada, że jak ktoś jest przeciwko torturom to jest po stronie morderców",
+  //     "Zakłada, że jak budujemy więzienia to jesteśmy po stronie morderców"
+  //   ],
+  //   conclusion: "XXX to coś będzie XXX"
+  // }
 ];
