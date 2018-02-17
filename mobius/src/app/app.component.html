@@ -4,21 +4,24 @@
       color: yellow !important;
     }
   </style>
-        <nav class="navbar navbar-expand-lg bg-primary">
-          <b><a class="navbar-brand text-white" href="#">FakeBook</a></b>
-            <div class="navbar-nav">
-              <a [routerLink]="['/start']" class="text-white nav-item nav-link" routerLinkActive="active" href="#"><b>Start</b></a>
-              <a [routerLink]="['/quiz']"  class="text-white nav-item nav-link" routerLinkActive="active" href="#"><b>Quiz</b></a>
-              <a [routerLink]="['/end']" class="text-white nav-item nav-link" routerLinkActive="active" href="#"><b>Koniec</b></a>
-            </div>
-          
-        </nav>
-  <router-outlet></router-outlet>
-  <!-- <pm-competitions></pm-competitions>
-  <pm-applications></pm-applications>
-  <pm-assessors></pm-assessors> -->
-
-  <div class="card card-header rounded-0 border-top-0">
-      <a href="#">footer</a>
+  <nav class="navbar navbar-expand-lg bg-primary">
+    <!-- <a class="navbar-brand" href="#">
+      <img src="/assets/brand/bootstrap-solid.svg" width="30" height="30" alt="">
+    </a> -->
+    <a class="navbar-brand text-white" href="#"><b>FakeBook</b></a>
+    <div class="navbar-nav">
+        <a [routerLink]="['/start']" class="text-white nav-item nav-link" routerLinkActive="active" href="#"><b>Start</b></a>
+        <a [routerLink]="['/quiz']"  class="text-white nav-item nav-link" routerLinkActive="active" href="#"><b>Quiz</b></a>
+        <a [routerLink]="['/end']" class="text-white nav-item nav-link" routerLinkActive="active" href="#"><b>Koniec</b></a>
+    </div>
+  </nav>
+  <div class="card">
+    <div class="card-body">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+  <div class="card card-header rounded-0 border-top-0 bg-primary text-white ">
+    <b>Drużyna Pierścienia Möbiusa  - bo prawda ma tylko jedną stronę</b>
+      <!-- <a class="text-white "href="#">footer</a> -->
   </div>
 </div>
