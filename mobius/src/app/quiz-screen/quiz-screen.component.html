@@ -7,20 +7,21 @@
 </div>
 
 <div *ngIf="question">
-  <div class="alert alert-warning">
-    <b>{{question.person}}</b>
-     {{question.post}}
+  <div class="alert ">
+      <app-post [person]="question.person" [text]="question.post" [postType]="question"></app-post>
   </div>
-
-  <div *ngFor="let comment of comments" class="alert alert-dark">
-    <b>{{comment.person}}</b> {{comment.text}}
+  
+  <div *ngFor="let comment of comments">
+      <app-post [person]="comment.person" [text]="comment.text" [postType]="otherPerson"></app-post>
   </div>
 
   <div *ngIf="showAnswers">
-    <div *ngFor="let answer of activeAnswers" (click)="pickAnswer(answer)" class="alert alert-primary" >
-      <b>Ty</b> {{answer.text}}
+    <div *ngFor="let answer of activeAnswers" (click)="pickAnswer(answer)"  >
+      <app-post [person]="'Odpowiedz'" [text]="answer.text" [postType]="answer"></app-post>
     </div>
   </div>
 
-  <div *ngIf="showConclusion" class="alert alert-info">{{question.conclusion}}</div>
+  <div *ngIf="showConclusion" class="alert alert-info">
+    <app-post [text]="question.conclusion"  [postType]="conclusion" ></app-post>
+  </div>
 </div>

@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { StartScreenComponent } from './start-screen/start-screen.component';
 import { QuizScreenComponent } from './quiz-screen/quiz-screen.component';
 import { EndScreenComponent } from './end-screen/end-screen.component';
+import { PostComponent } from './post/post.component';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { EndScreenComponent } from './end-screen/end-screen.component';
     AppComponent,
     StartScreenComponent,
     QuizScreenComponent,
-    EndScreenComponent
+    EndScreenComponent,
+    PostComponent
   ],
   imports: [
     BrowserModule,
