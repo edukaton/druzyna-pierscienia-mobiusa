@@ -1,16 +1,25 @@
 
 <div>Pytanie numer: {{currentQuestionId}}</div>
-
-<div *ngIf="question">
-  <div>{{question.person}}</div>
-  <div>{{question.post}}</div>
-  <div *ngFor="let answer of question.answers">
-    {{answer}}
-  </div>
-  <div>{{question.conclusion}}</div>
-</div>
-
 <div>
   <button (click)='changeQuestion(-1)'> PREVIOUS</button>
   <button (click)='changeQuestion(1)'>NEXT</button>
+</div>
+
+<div *ngIf="question">
+  <div class="alert alert-warning">
+    <b>{{question.person}}</b>
+     {{question.post}}
+  </div>
+
+  <div *ngIf="showPrompt" class="alert alert-dark">
+    <b>Twoja Mama</b> Jacusiu, a co o Tym sądzisz?
+  </div>
+
+  <div *ngIf="showAnswers">
+    <div *ngFor="let answer of question.answers" (click)="pickAnswer(answer)" class="alert alert-primary" >
+      {{answer}}
+    </div>
+  </div>
+
+  <div *ngIf="showConclusion" class="alert alert-info">{{question.conclusion}}</div>
 </div>

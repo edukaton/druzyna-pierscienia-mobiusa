@@ -10,14 +10,37 @@ import { QUESTIONS } from '../questions';
 export class QuizScreenComponent implements OnInit {
 
   currentQuestionId: number = 0;
-  question: Question = QUESTIONS[0];
+  question: Question;
+
+  showPrompt: boolean;
+  showAnswers: boolean;
+  showConclusion: boolean;
+
+  constructor() {
+    this.startQuestion(QUESTIONS[0]);
+  }
 
   changeQuestion(increment: number) {
     this.currentQuestionId += increment;
-    this.question = QUESTIONS[this.currentQuestionId];
+    this.startQuestion(QUESTIONS[this.currentQuestionId]);
   }
 
-  constructor() { }
+  startQuestion(question: Question) {
+    this.question = question;
+    this.showPrompt = false;
+    this.showAnswers = false;
+    this.showConclusion = false;
+
+    window.setTimeout(() => { this.showPrompt = true; }, 2000);
+
+    window.setTimeout(() => { this.showAnswers = true; }, 4000);
+  }
+
+  pickAnswer(answer) {
+
+    this.showConclusion = true;
+  }
+
 
   ngOnInit() {
   }
