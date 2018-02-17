@@ -74,7 +74,7 @@ export const QUESTIONS: Question[] = [
     source: "",
     answers: [
       {
-        correct: falseWizja może znaczyć dwie różne rzeczy.,
+        correct: false,
         text: "On myśli, że wszyscy mają poczucie humoru.",
         reply: "Nie no, nie myśli..."
       },
@@ -94,8 +94,7 @@ export const QUESTIONS: Question[] = [
         reply: "Świetna uwaga!"
       },
     ],
-    conclusion: "Tusk tak naprawdę nie odpowiedział na krytykę, tylko zbył ją żartem. Wykorzystał przy tym to, że “wizja” może znaczyć coś innego niż to co mieli na myśli jego krytycy. (opcja: to się nazywa ekwiwokacja)
-"
+    conclusion: "Tusk tak naprawdę nie odpowiedział na krytykę, tylko zbył ją żartem. Wykorzystał przy tym to, że “wizja” może znaczyć coś innego niż to co mieli na myśli jego krytycy. (opcja: to się nazywa ekwiwokacja)"
   },
       {
     person: "",
