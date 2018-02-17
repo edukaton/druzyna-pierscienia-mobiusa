@@ -63,6 +63,7 @@ export class QuizScreenComponent implements OnInit {
     this.activeAnswers = this.activeAnswers
       .filter((x) => x.text != answer.text);
 
+    this.score += (2 * answer.correct - 1);
     this.correctAnswersLeft -= answer.correct;
     if (this.correctAnswersLeft == 0) {
       this.showAnswers = false;
