@@ -1,4 +1,4 @@
-import { Question } from './question';
+import { Question, Answer } from './question';
 
 export const QUESTIONS: Question[] = [
   {
@@ -6,10 +6,31 @@ export const QUESTIONS: Question[] = [
     post: "Ludzie pokazują palcami, jakim ja samochodem jeżdżę. Że Mercedesem klasy S. A niby czym mam jeździć? Na krowie mam jeździć? Głupoty takie gadają... mogę na krowie, ale gdzie ja bym tę krowę trzymał w Radiu Maryja?",
     source: "",
     answers: [
-      "Jeżdżenie na krowie jest OK.",
-      "Nie da się jeździć na krowie.",
-      "Mercedes i krowa to nie są jedyne opcje. Krowa się spokojnie spokojnie zmieści w Radiu Maryja",
-      "O. Rydzyk udaje że jego krytykom chodzi o to, że ma nie jeździć samochodem, a nie że ma nie jeździć bardzo drogim samochodem."
+      {
+        correct: false,
+        text: "Jeżdżenie na krowie jest OK.",
+        reply: "Nie no, serio..?!"
+      },
+      {
+        correct: false,
+        text: "Nie da się jeździć na krowie.",
+        reply: "no co ty, patrz! (TU BĘDZIE OBRAZEK)"
+      },
+      {
+        correct: true,
+        text: "Mercedes i krowa to nie są jedyne opcje.",
+        reply: "Słuszna obserwacja!"
+      },
+      {
+        correct: false,
+        text: "Krowa się spokojnie spokojnie zmieści w Radiu Maryja.",
+        reply: "I co z tego?"
+      },
+      {
+        correct: true,
+        text: "O. Rydzyk udaje że jego krytykom chodzi o to, że ma nie jeździć samochodem, a nie że ma nie jeździć bardzo drogim samochodem.",
+        reply: "Zdecydowanie!"
+      }
     ],
     conclusion: "Odpowiedź c i e): Tu są dwa główne problemy. Często politycy udają że ich oponenci powiedzieli coś dużo bardziej radykalnego, żeby łatwiej z tym dyskutować. Często też ludzie udają że są tylko dwie opcje do wyboru. Na przykład fajnie by było na początku tej gry mieć jakieś inne opcje do wyboru niż Kaczor i Donald. ;)"
   },
