@@ -1,8 +1,16 @@
 
-<div>{{currentQuestionId}}</div>
+<div>Pytanie numer: {{currentQuestionId}}</div>
 
+<div *ngIf="question">
+  <div>{{question.person}}</div>
+  <div>{{question.post}}</div>
+  <div *ngFor="let answer of question.answers">
+    {{answer}}
+  </div>
+  <div>{{question.conclusion}}</div>
+</div>
 
-
-
-<button (click)='changeQuestion(-1)'> PREVIOUS</button>
-<button (click)='changeQuestion(1)'>NEXT</button>
+<div>
+  <button (click)='changeQuestion(-1)'> PREVIOUS</button>
+  <button (click)='changeQuestion(1)'>NEXT</button>
+</div>
