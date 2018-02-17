@@ -1,20 +1,17 @@
 <div class="container-fluid">
-
-      <nav class="navbar navbar-light bg-faded navbar-inverse bg-primary navbar-toggleable-sm" style="border-bottom: 1px solid rgba(0, 0, 0, 0.125)">
-          <a class="navbar-brand" href="#"></a>
-            <ul class="navbar-nav mr-auto mt-2 mt-md-0">
-              <li class="nav-item active">
-                <a [routerLink]="['/start']" class="nav-link" href="#">start <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a [routerLink]="['/quiz']" class="nav-link" >quiz</a>
-              </li>
-              <li class="nav-item">
-                  <a [routerLink]="['/end']" class="nav-link" >koniec</a>
-              </li>
-
-            </ul>
-
+  <style>
+    .nav-link.active{
+      color: yellow !important;
+    }
+  </style>
+        <nav class="navbar navbar-expand-lg bg-primary">
+          <b><a class="navbar-brand text-white" href="#">FakeBook</a></b>
+            <div class="navbar-nav">
+              <a [routerLink]="['/start']" class="text-white nav-item nav-link" routerLinkActive="active" href="#"><b>Start</b></a>
+              <a [routerLink]="['/quiz']"  class="text-white nav-item nav-link" routerLinkActive="active" href="#"><b>Quiz</b></a>
+              <a [routerLink]="['/end']" class="text-white nav-item nav-link" routerLinkActive="active" href="#"><b>Koniec</b></a>
+            </div>
+          
         </nav>
   <router-outlet></router-outlet>
   <!-- <pm-competitions></pm-competitions>
