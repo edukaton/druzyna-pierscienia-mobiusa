@@ -45,4 +45,27 @@ export const QUESTIONS: Question[] = [
   //   ],
   //   conclusion: "XXX to coś będzie XXX"
   // }
+  {
+    person: "Kuzyn Czesiek",
+    post: "Kiedy wyszło na jaw, że w Polsce były tajne więzienia w których CIA torturowało więźniów pojmanych w Iraku, Leszek Miller bronił swojej decyzji mówiąc: “Albo jesteśmy po stronie ofiar, albo morderców.”",
+    source: "",
+    answers: [
+      {
+        correct: true,
+        text: "W więzieniu są nie tylko mordercy.",
+        reply: "Prawda prawda."
+      },
+      {
+        correct: true,
+        text: "On ściemnia, że jak ktoś jest przeciwko torturom to jest po stronie morderców.",
+        reply: "Masz absolutną rację."
+      },
+      {
+        correct: false,
+        text: "Mówi, że jak budujemy więzienia to jesteśmy po stronie morderców. To bez sensu!",
+        reply: "Pysiu, Leszek Miller to premier który wydał zgodę na budowę tych więzień."
+      },
+    ],
+    conclusion: "Miller chce tu wzbudzić poczucie winy u krytyków, że jak będą krytykować jego decyzję żeby pozwolić na tortury to sa po stronie “morderców.” Ma nadzieje że, wtedy zamilkną bo nie chcą być wrzuceni do jednego worka z terrorystami."
+  },
 ];
