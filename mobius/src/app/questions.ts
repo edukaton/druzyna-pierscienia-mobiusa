@@ -68,4 +68,79 @@ export const QUESTIONS: Question[] = [
     ],
     conclusion: "Miller chce tu wzbudzić poczucie winy u krytyków, że jak będą krytykować jego decyzję żeby pozwolić na tortury to sa po stronie “morderców.” Ma nadzieje że, wtedy zamilkną bo nie chcą być wrzuceni do jednego worka z terrorystami."
   },
+    {
+    person: "Karo",
+    post: "W odpowiedzi na zarzuty, że jego partia nie ma wizji Polski którą by chcieli zbudować Donald Tusk powiedział ,,jak ktoś ma wizje, niech idzie do lekarza''. ",
+    source: "",
+    answers: [
+      {
+        correct: falseWizja może znaczyć dwie różne rzeczy.,
+        text: "On myśli, że wszyscy mają poczucie humoru.",
+        reply: "Nie no, nie myśli..."
+      },
+      {
+        correct: true,
+        text: "Wizja może znaczyć dwie różne rzeczy.",
+        reply: "Ano."
+      },
+      {
+        correct: false,
+        text: "Do lekarza trzeba się zapisywać z wyprzedzeniem..",
+        reply: "Chyba jednak nie o to mu chodziło."
+      },
+            {
+        correct: true,
+        text: "Odpowiada nie na temat.",
+        reply: "Świetna uwaga!"
+      },
+    ],
+    conclusion: "Tusk tak naprawdę nie odpowiedział na krytykę, tylko zbył ją żartem. Wykorzystał przy tym to, że “wizja” może znaczyć coś innego niż to co mieli na myśli jego krytycy. (opcja: to się nazywa ekwiwokacja)
+"
+  },
+      {
+    person: "",
+    post: "",
+    source: "",
+    answers: [
+      {
+        correct: true,
+        text: "",
+        reply: ""
+      },
+      {
+        correct: true,
+        text: "",
+        reply: ""
+      },
+      {
+        correct: false,
+        text: "",
+        reply: ""
+      },
+    ],
+    conclusion: ""
+  },
+ {
+    person: "",
+    post: "",
+    source: "",
+    answers: [
+      {
+        correct: true,
+        text: "",
+        reply: ""
+      },
+      {
+        correct: true,
+        text: "",
+        reply: ""
+      },
+      {
+        correct: false,
+        text: "",
+        reply: ""
+      },
+    ],
+    conclusion: ""
+  },
 ];
