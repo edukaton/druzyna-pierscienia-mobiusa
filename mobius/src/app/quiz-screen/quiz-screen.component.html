@@ -1,5 +1,6 @@
 
 <div>Pytanie numer: {{currentQuestionId}}</div>
+<div>Zostały poprawnych odp: {{correctAnswersLeft}}</div>
 <div>
   <button (click)='changeQuestion(-1)'> PREVIOUS</button>
   <button (click)='changeQuestion(1)'>NEXT</button>
@@ -11,12 +12,12 @@
      {{question.post}}
   </div>
 
-  <div *ngIf="showPrompt" class="alert alert-dark">
-    <b>Twoja Mama</b> Jacusiu, a co o Tym sądzisz?
+  <div *ngFor="let comment of comments" class="alert alert-dark">
+    <b>{{comment.person}}</b> {{comment.text}}
   </div>
 
   <div *ngIf="showAnswers">
-    <div *ngFor="let answer of question.answers" (click)="pickAnswer(answer)" class="alert alert-primary" >
+    <div *ngFor="let answer of activeAnswers" (click)="pickAnswer(answer)" class="alert alert-primary" >
       <b>Ty</b> {{answer.text}}
     </div>
   </div>
