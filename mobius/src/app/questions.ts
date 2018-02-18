@@ -2,6 +2,7 @@ import { Question, Answer } from './question';
 
 export const QUESTIONS: Question[] = [{
 		person: "Ojciec Rydzyk",
+		pysk:"Ojciec_Rydzyk.jpg",
 		post: "Ludzie pokazują palcami, jakim ja samochodem jeżdżę. Że Mercedesem klasy S. A niby czym mam jeździć? Na krowie mam jeździć? Głupoty takie gadają... mogę na krowie, ale gdzie ja bym tę krowę trzymał w Radiu Maryja?",
 		source: "",
 		answers: [{
@@ -34,6 +35,7 @@ export const QUESTIONS: Question[] = [{
 	},
 	{
 		person: "Wujek Staszek",
+		pysk: "Wujek_Staszek.jpg",
 		post: "Kiedy wyszło na jaw, że w Polsce były tajne więzienia w których CIA torturowało więźniów pojmanych w Iraku, Leszek Miller bronił swojej decyzji mówiąc: “Albo jesteśmy po stronie ofiar, albo morderców.”",
 		source: "",
 		answers: [{
@@ -56,6 +58,7 @@ export const QUESTIONS: Question[] = [{
 	},
 	{
 		person: "Karo",
+		pysk:"Karo.jpg",
 		post: "W odpowiedzi na zarzuty, że jego partia nie ma wizji Polski którą by chcieli zbudować Donald Tusk powiedział ,,jak ktoś ma wizje, niech idzie do lekarza''. ",
 		source: "",
 		answers: [{
@@ -83,6 +86,7 @@ export const QUESTIONS: Question[] = [{
 	},
 	{
 		person: "Fakt",
+		pysk:"Fakt.jpg",
 		post: "",
 		source: "",
 		picture: "fakt.jpg",
@@ -106,6 +110,7 @@ export const QUESTIONS: Question[] = [{
 	},
 	{
 		person: "Krystyna Pawłowicz",
+		pysk:"Krystyna_Pawłowicz.jpg",
 		post: "",
 	    picture: "krysia.png",
 		source: "",
@@ -139,6 +144,7 @@ export const QUESTIONS: Question[] = [{
 	},
 	{
 		person: "Ciocia Emilka:",
+		pysk:"Ciocia_Emilka.jpg",
 		post: "Trzebe jeść więcej czekolady, to może dostaniesz Nobla.",
 	    picture: "nobel.png",
 		source: "",
@@ -172,6 +178,7 @@ export const QUESTIONS: Question[] = [{
 	},
 	{
 		person: "Bank",
+		pysk:"Bank.jpg",
 		post: "",
 		source: "",
 		picture: "malysz.jpg",
@@ -195,6 +202,7 @@ export const QUESTIONS: Question[] = [{
 	},
 	{
 		person: "Pudelek",
+		pysk:"Pudelek.jpg",
 		post: "",
 		source: "",
 		picture: "misiewicz.png",
@@ -223,6 +231,7 @@ export const QUESTIONS: Question[] = [{
 	},
 	{
 		person: "wpolityce.pl",
+		pysk:"wpolityce.pl.jpg",
 		post: "Frasyniuk ma sprawę o “naruszenie nietykalności policjanta” podczas protestu politycznego. Nie stawił się do prokuratury, więc o świcie policja zjawiła się w jego mieszkaniu i odprowadziła w kajdankach.",
 		picture: "sonda.png",
 		source: "",
@@ -246,6 +255,7 @@ export const QUESTIONS: Question[] = [{
 	},
   {
 		person: "Pepsi",
+		pysk:"Pepsi",
 		post: "",
 		picture: "pepsi.png",
 		source: "",

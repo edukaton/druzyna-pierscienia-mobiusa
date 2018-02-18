@@ -11,4 +11,6 @@ export class Question {
   answers: Answer[];
   conclusion: string;
   picture?: string;
+  pysk?:string;
+  video?:string;
 }

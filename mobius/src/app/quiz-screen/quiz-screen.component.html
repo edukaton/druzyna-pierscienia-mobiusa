@@ -6,8 +6,8 @@
   <button (click)='changeQuestion(1)'>NEXT</button>
 </div>
 
-  <div *ngIf="question" style="margin-top:12px">
-      <app-post [person]="question.person" [picture]="question.picture"[text]="question.post" [postType]="'question'"></app-post>
+  <div *ngIf="question" style="margin-top:20px">
+      <app-post [person]="question.person" [pysk]="question.pysk" [picture]="question.picture"[text]="question.post" [postType]="'question'"></app-post>
   </div>
   
   <div *ngFor="let comment of comments">
@@ -20,7 +20,7 @@
     </div>
   </div>
 
-  <div *ngIf="showConclusion" class="alert alert-info">
+  <div *ngIf="showConclusion" >
     <app-post [text]="question.conclusion"  [postType]="'conclusion'" ></app-post>
   </div>
 

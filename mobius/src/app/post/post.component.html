@@ -13,20 +13,23 @@
     margin-bottom:10px;
   }
   .bg-light:hover{
-    background-color: rgba(0, 0, 0, 0.2) !important; 
+    background-color: rgba(0, 0, 0, 0.2) !important;
   }
   .bg-warning {
-    background-color: rgba(0, 0, 0, 0.2) !important; 
+    background-color: rgba(0, 0, 0, 0.2) !important;
   }
 </style>
 
 <div >
-  <img [src]="pictureUrl" class="person-img" style="display:inline-block">
+  <img *ngIf="postType!='question'"  [src]="pictureUrl" class="person-img" style="display:inline-block">
+  <img *ngIf="postType=='question'"  [src]="'assets/pyski/'+pysk" class="person-img" style="display:inline-block">
+
   <div  [ngClass]="'card mb-3 '+ postTypeSelector[postType]"  style="max-width: 80rem; display:inline-block">
     <!-- <div>{{postTypeSelector[postType]}}</div> -->
 
       <div class="card-body">
         <div *ngIf="showPost" class="card-text"><b>{{person}}: </b> {{text}}</div>
+        <div *ngIf='picture'><img  [src]="'assets/questions/'+picture"/></div>
         <div width="400" *ngIf="!showPost" >
           {{loader}}
         </div>

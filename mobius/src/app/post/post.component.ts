@@ -10,6 +10,7 @@ export class PostComponent implements OnInit {
   @Input() text: string;
   @Input() picture: string;
   @Input() links: string[];
+  @Input() pysk: string;
   @Input() postType: string;
   
   //variables needed for typing animation
@@ -22,7 +23,7 @@ export class PostComponent implements OnInit {
     "question":"bg-primary text-white",
     "otherPerson":"bg-primary text-white",
     "answer":"bg-light",
-    "conclusion":"bg-primary text-white",
+    "conclusion":"bg-success text-white",
     "Ty":"bg-warning"}
   constructor() {
   }
@@ -45,6 +46,8 @@ export class PostComponent implements OnInit {
     if (this.postType=="question" || this.postType=="otherPerson"){this.pictureUrl+=this.person.replace(' ','_')+'.jpg'}
     else if (this.postType=="Ty"){this.pictureUrl+='cat.jpeg'}
     else if (this.postType=="answer"){this.pictureUrl+='question.png'}
+    else if (this.postType=="conclusion"){this.pictureUrl+='Spock.jpg'}
+    
     //console.log("picture",this.pictureUrl);
   }
 
