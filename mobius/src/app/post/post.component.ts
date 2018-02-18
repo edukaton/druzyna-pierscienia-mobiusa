@@ -30,7 +30,7 @@ export class PostComponent implements OnInit {
 
   ngOnInit() {
     //Typing animation
-    console.log(this.video);
+  
     const timerId = setInterval(() => {
       this.loader=this.loader.length==4?".":this.loader+='.';
       this.loaderCounter+=1;
@@ -39,7 +39,7 @@ export class PostComponent implements OnInit {
         clearInterval(timerId);
       }
     },100);
-
+    console.log("vid",this.video);
     //changes postType if the person is "Ty"
     if(this.person=="Ty") {
       this.postType = "Ty";
