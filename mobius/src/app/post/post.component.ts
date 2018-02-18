@@ -45,9 +45,10 @@ export class PostComponent implements OnInit {
     }
     if (this.postType=="question" || this.postType=="otherPerson"){this.pictureUrl+=this.person.replace(' ','_')+'.jpg'}
     else if (this.postType=="Ty"){this.pictureUrl+='cat.jpeg'}
-    else if (this.postType=="answer"){this.pictureUrl+='question.png'}
+    else if (this.postType=="answer"){
+      this.person=="Twoja Mama"?  this.pictureUrl+='Twoja_Mama.jpg':this.pictureUrl+='question.png';
+    }
     else if (this.postType=="conclusion"){this.pictureUrl+='Spock.jpg'}
-
     //console.log("picture",this.pictureUrl);
   }
 
