@@ -10,5 +10,5 @@ export class Question {
   source: string;
   answers: Answer[];
   conclusion: string;
-  picture?:string;
+  picture?: string;
 }

@@ -24,7 +24,7 @@ export class PostComponent implements OnInit {
     "answer":"bg-light",
     "conclusion":"bg-primary text-white",
     "Ty":"bg-warning text-white"}
-  constructor() { 
+  constructor() {
   }
 
   ngOnInit() {
