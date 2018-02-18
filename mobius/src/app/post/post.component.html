@@ -14,32 +14,17 @@
   }
 </style>
 
-<!-- <div *ngIf="!showPost" >{{loader}}<div> -->
 <div >
-  <img src="/assets/pysk.png" class="person-img" style="display:inline-block">
+  <img [src]="pictureUrl" class="person-img" style="display:inline-block">
 
   <div  [ngClass]="'card mb-3 '+ postTypeSelector[postType]"  style="max-width: 80rem; display:inline-block">
     <!-- <div>{{postTypeSelector[postType]}}</div> -->
       <!-- <div class="card-header"></div> -->
       <div class="card-body"> 
         <div *ngIf="showPost" class="card-text"><b>{{person}}: </b> {{text}}</div>
-        <div width="400" *ngIf="!showPost" >{{loader}}</div>
+        <div width="400" *ngIf="!showPost" >
+          {{loader}}
+        </div>
       </div>
   </div>
 </div>
-<!-- TY -->
-  <!-- <div class="card text-white bg-primary mb-3" style="max-width: 30rem;">
-      <div class="card-header">Header</div>
-      <div class="card-body">
-        <h5 class="card-title">Primary card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      </div>
-    </div> -->
-  <!-- ODPOWIEDZI -->
-  <!-- <div class="card text-white bg-secondary mb-3" style="max-width: 30rem;">
-      <div class="card-header">Header</div>
-      <div class="card-body">
-        <h5 class="card-title">Secondary card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      </div>
-    </div> -->

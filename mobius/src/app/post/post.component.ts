@@ -16,7 +16,8 @@ export class PostComponent implements OnInit {
   loader:string=".";
   loaderCounter:number=0;
   showPost:boolean=false;
-  
+  //picture url
+  pictureUrl:string='/assets/pyski/';  
   postTypeSelector:any = {
     "question":"bg-primary text-white",
     "otherPerson":"bg-primary text-white",
@@ -27,7 +28,6 @@ export class PostComponent implements OnInit {
   }
 
   ngOnInit() {
-
     //Typing animation
     const timerId = setInterval(() => {
       this.loader=this.loader.length==4?".":this.loader+='.';
@@ -42,6 +42,10 @@ export class PostComponent implements OnInit {
     if(this.person=="Ty") {
       this.postType = "Ty";
     }
+    if (this.postType=="question" || this.postType=="otherPerson"){this.pictureUrl+=this.person.replace(' ','_')+'.jpg'}
+    else if (this.postType=="Ty"){this.pictureUrl+='pysk.png'}
+    else if (this.postType=="answer"){this.pictureUrl+='question.png'}
+    console.log("picture",this.pictureUrl);
   }
 
 }
