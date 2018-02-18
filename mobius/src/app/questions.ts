@@ -255,7 +255,7 @@ export const QUESTIONS: Question[] = [{
 	},
   {
 		person: "Pepsi",
-		pysk:"Pepsi",
+		pysk:"Pepsi.jpg",
 		post: "",
 		picture: "pepsi.png",
 		source: "",
