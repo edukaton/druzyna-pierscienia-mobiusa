@@ -1,30 +1,35 @@
 import { Question, Answer } from './question';
 
-export const QUESTIONS: Question[] = [{
-		person: "Bank",
-		pysk:"Bank.jpg",
-		post: "",
+export const QUESTIONS: Question[] = [
+	{
+		person: "Karo",
+		pysk:"Karo.jpg",
+		post: "W odpowiedzi na zarzuty, że jego partia nie ma wizji Polski którą by chcieli zbudować Donald Tusk powiedział ,,jak ktoś ma wizje, niech idzie do lekarza''. ",
 		source: "",
-		picture: "malysz.jpg",
 		answers: [{
+				correct: false,
+				text: "On myśli, że wszyscy mają poczucie humoru.",
+				reply: "Nie no, nie myśli..."
+			},
+			{
 				correct: true,
-				text: "Małysz nie jest ekspertem od bankowości.",
-				reply: "Masz rację."
+				text: "Wizja może znaczyć dwie różne rzeczy.",
+				reply: "Ano."
 			},
 			{
 				correct: false,
-				text: "Czerwone karty są lamerskie.",
-				reply: "A ja mam. Usuwam Cię ze znajomych."
+				text: "Do lekarza trzeba się zapisywać z wyprzedzeniem..",
+				reply: "Chyba jednak nie o to mu chodziło."
 			},
 			{
-				correct: false,
-				text: "Małysz jest kiepskim skoczkiem.",
-				reply: "Usuwam Cie ze znajomych i moja ciocia też."
+				correct: true,
+				text: "Odpowiada nie na temat.",
+				reply: "Świetna uwaga!"
 			},
 		],
-		video: "https://youtu.be/cJXe-kIKVbQ",
-    conclusion: "W reklamach możemy często spotkać zobaczyć ludzi znanych, którzy niekoniecznie znają się na tym co reklamują. Reklamodawcy mają nadzieję, że wybierzemy ich produkt, bo czujemy się emocjonalnie związani z osobami w nich występującymi. Przykładów takich reklam można w sieci znaleźć całe mnóstwo. No chyba, że Chuck Norris. On się podobno zna na wszystkim."
-	},
+		conclusion: "Tusk tak naprawdę nie odpowiedział na krytykę, tylko zbył ją żartem. Wykorzystał przy tym to, że “wizja” może znaczyć coś innego niż to co mieli na myśli jego krytycy. (opcja: to się nazywa ekwiwokacja)",
+	  video: "https://youtu.be/PXBQnw2zs1A"
+  },
   {
 		person: "Ojciec Rydzyk",
 		pysk:"Ojciec_Rydzyk.jpg",
@@ -59,6 +64,31 @@ export const QUESTIONS: Question[] = [{
 		video: "https://www.youtube.com/embed/4cqFp_lvb0o",
     conclusion: "Tu są dwa główne problemy. Często politycy udają że ich oponenci powiedzieli coś dużo bardziej radykalnego, żeby łatwiej z tym dyskutować. Często też ludzie udają że są tylko dwie opcje do wyboru. Na przykład fajnie by było na początku tej gry mieć jakieś inne opcje do wyboru niż Kaczor i Donald. ;)"
 	},
+  {
+		person: "Bank",
+		pysk:"Bank.jpg",
+		post: "Zapoznaj sie z nasza ofertą!",
+		source: "",
+		picture: "malysz.jpg",
+		answers: [{
+				correct: true,
+				text: "Małysz nie jest ekspertem od bankowości.",
+				reply: "Masz rację."
+			},
+			{
+				correct: false,
+				text: "Czerwone karty są lamerskie.",
+				reply: "A ja mam. Usuwam Cię ze znajomych."
+			},
+			{
+				correct: false,
+				text: "Małysz jest kiepskim skoczkiem.",
+				reply: "Usuwam Cie ze znajomych i moja ciocia też."
+			},
+		],
+		video: "https://youtu.be/cJXe-kIKVbQ",
+    conclusion: "W reklamach możemy często spotkać zobaczyć ludzi znanych, którzy niekoniecznie znają się na tym co reklamują. Reklamodawcy mają nadzieję, że wybierzemy ich produkt, bo czujemy się emocjonalnie związani z osobami w nich występującymi. Przykładów takich reklam można w sieci znaleźć całe mnóstwo. No chyba, że Chuck Norris. On się podobno zna na wszystkim."
+	},
 	{
 		person: "Wujek Staszek",
 		pysk: "Wujek_Staszek.jpg",
@@ -83,37 +113,9 @@ export const QUESTIONS: Question[] = [{
 		conclusion: "Miller chce tu wzbudzić poczucie winy u krytyków, że jak będą krytykować jego decyzję żeby pozwolić na tortury to sa po stronie “morderców.” Ma nadzieje że, wtedy zamilkną bo nie chcą być wrzuceni do jednego worka z terrorystami."
 	},
 	{
-		person: "Karo",
-		pysk:"Karo.jpg",
-		post: "W odpowiedzi na zarzuty, że jego partia nie ma wizji Polski którą by chcieli zbudować Donald Tusk powiedział ,,jak ktoś ma wizje, niech idzie do lekarza''. ",
-		source: "",
-		answers: [{
-				correct: false,
-				text: "On myśli, że wszyscy mają poczucie humoru.",
-				reply: "Nie no, nie myśli..."
-			},
-			{
-				correct: true,
-				text: "Wizja może znaczyć dwie różne rzeczy.",
-				reply: "Ano."
-			},
-			{
-				correct: false,
-				text: "Do lekarza trzeba się zapisywać z wyprzedzeniem..",
-				reply: "Chyba jednak nie o to mu chodziło."
-			},
-			{
-				correct: true,
-				text: "Odpowiada nie na temat.",
-				reply: "Świetna uwaga!"
-			},
-		],
-		conclusion: "Tusk tak naprawdę nie odpowiedział na krytykę, tylko zbył ją żartem. Wykorzystał przy tym to, że “wizja” może znaczyć coś innego niż to co mieli na myśli jego krytycy. (opcja: to się nazywa ekwiwokacja)"
-	},
-	{
 		person: "Fakt",
 		pysk:"Fakt.jpg",
-		post: "",
+		post: "Spełniło sie jego największe marzenie!",
 		source: "",
 		picture: "fakt.jpg",
 		answers: [{
@@ -138,7 +140,7 @@ export const QUESTIONS: Question[] = [{
 	{
 		person: "Krystyna Pawłowicz",
 		pysk:"Krystyna_Pawłowicz.jpg",
-		post: "",
+		post: "Nowy tweet.",
 	    picture: "krysia.png",
 		source: "",
 		answers: [{
@@ -206,7 +208,7 @@ export const QUESTIONS: Question[] = [{
 	{
 		person: "Pudelek",
 		pysk:"Pudelek.jpg",
-		post: "",
+		post: "A Wam sie podoba?",
 		source: "",
 		picture: "misiewicz.png",
 		answers: [{
@@ -259,13 +261,13 @@ export const QUESTIONS: Question[] = [{
   {
 		person: "Pepsi",
 		pysk:"Pepsi.jpg",
-		post: "",
+		post: "Wyzwanie Smaku właśnie się zakończyło!",
 		picture: "pepsi.png",
 		source: "",
 		answers: [{
 				correct: false,
-				text: "Fajne kolorki.",
-				reply: ":D"
+				text: "Po co reklamować coś, co się zakończyło?.",
+				reply: "Reklamują Pepsi a nie Wyzwanie Smaku...."
 			},
 			{
 				correct: true,
