@@ -1,3 +1,8 @@
-<p>
-  <img src="assets/screen_start.png" class="img-fluid" alt="Kaczor vs Donald">
-</p>
+<div *ngIf="!chooseSides">
+  <img src="assets/screen_intro.gif" class="img-fluid clickable" alt="Ktoś nie ma racji w internecie!" (click)="firstScreen()">
+</div>
+<div *ngIf="chooseSides">
+  <a [routerLink]="['/quiz']" routerLinkActive="active" href="#">
+    <img src="assets/screen_start.png" class="img-fluid clickable" alt="Kaczor vs Donald">
+  </a>
+</div>

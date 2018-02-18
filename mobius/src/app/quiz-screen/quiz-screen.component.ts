@@ -14,6 +14,7 @@ export class QuizScreenComponent implements OnInit {
   currentQuestionId: number = 0;
   score: number = 50;
   question: Question;
+  totalQuestions: number = QUESTIONS.length;
 
   showAnswers: boolean;
   showConclusion: boolean;
@@ -44,7 +45,7 @@ export class QuizScreenComponent implements OnInit {
     window.setTimeout(() => {
       this.comments.push({
         person: "Twoja Mama",
-        text: "Jacusiu, a co o Tym sądzisz?"
+        text: "Drogie dziecko, a co Ty o tym sądzisz?"
       });
     }, DELAY);
 
@@ -60,10 +61,12 @@ export class QuizScreenComponent implements OnInit {
       text: answer.text
     });
 
+    const somethingMore = this.correctAnswersLeft > 1 ? " Coś jeszcze?" : "";
+
     setTimeout(() => {
       this.comments.push({
         person: "Wujek Mietek",
-        text: answer.reply
+        text: answer.reply + somethingMore
       });
     }, DELAY);
 

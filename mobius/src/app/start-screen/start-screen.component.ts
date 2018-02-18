@@ -7,6 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StartScreenComponent implements OnInit {
 
+  chooseSides: boolean = false;
+
+  firstScreen() {
+    this.chooseSides = true;
+  }
+
   constructor() { }
 
   ngOnInit() {
