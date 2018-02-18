@@ -1,10 +1,30 @@
 <!-- PYTANIE / KOŚ-->
-<div class="card text-white bg-warning mb-3" style="max-width: 80rem;">
-    <div class="card-header"><b>{{person}} :</b></div>
+<style>
+  .card-body{
+    padding: 0.7rem;
+  }
+  .person-img{
+    border: 1px solid #dee2e6;
+    padding: 0.1rem;
+    border-radius: 50%;
+    height:70px;
+    width:70px;
+    margin-right:10px;
+    margin-bottom:10px;
+  }
+</style>
+
+
+<img src="/assets/pysk.png" class="person-img" style="display:inline-block">
+
+<div  [ngClass]="'card mb-3 '+ postTypeSelector[postType]"  style="max-width: 80rem; display:inline-block">
+  <!-- <div>{{postTypeSelector[postType]}}</div> -->
+    <!-- <div class="card-header"></div> -->
     <div class="card-body">
-      <p class="card-text">{{text}}</p>
+      <p class="card-text"><b>{{person}}: </b> {{text}}</p>
     </div>
 </div>
+
 <!-- TY -->
   <!-- <div class="card text-white bg-primary mb-3" style="max-width: 30rem;">
       <div class="card-header">Header</div>
@@ -21,4 +41,3 @@
         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
       </div>
     </div> -->
-    
