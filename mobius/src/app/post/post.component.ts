@@ -11,6 +11,9 @@ export class PostComponent implements OnInit {
   @Input() picture: string;
   @Input() links: string[];
   @Input() postType: string;
+  loader:string="";
+  loaderCounter:number=0;
+  showPost:boolean=false;
   postTypeSelector:any = {
     "question":"bg-primary text-white",
     "otherPerson":"bg-primary text-white",
@@ -21,7 +24,16 @@ export class PostComponent implements OnInit {
   }
 
   ngOnInit() {
-    //console.log("this.person : "+this.person)
+    const timerId = setInterval(() => {
+      this.loader=this.loader.length==3?"":this.loader+='.';
+      this.loaderCounter+=1;
+      if(this.loaderCounter==7){
+        clearInterval(timerId);
+        this.showPost=true;
+      }
+    },300);
+
+    //changes postType if the person is "Ty"
     if(this.person=="Ty") {
       this.postType = "Ty";
     }
