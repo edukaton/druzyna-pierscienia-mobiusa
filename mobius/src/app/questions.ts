@@ -30,7 +30,7 @@ export const QUESTIONS: Question[] = [{
 				reply: "Zdecydowanie!"
 			}
 		],
-		conclusion: "Odpowiedź c i e): Tu są dwa główne problemy. Często politycy udają że ich oponenci powiedzieli coś dużo bardziej radykalnego, żeby łatwiej z tym dyskutować. Często też ludzie udają że są tylko dwie opcje do wyboru. Na przykład fajnie by było na początku tej gry mieć jakieś inne opcje do wyboru niż Kaczor i Donald. ;)"
+		conclusion: "Odpowiedź c i e - Tu są dwa główne problemy. Często politycy udają że ich oponenci powiedzieli coś dużo bardziej radykalnego, żeby łatwiej z tym dyskutować. Często też ludzie udają że są tylko dwie opcje do wyboru. Na przykład fajnie by było na początku tej gry mieć jakieś inne opcje do wyboru niż Kaczor i Donald. ;)"
 	},
 	{
 		person: "Wujek Staszek",
@@ -85,7 +85,7 @@ export const QUESTIONS: Question[] = [{
 		person: "Fakt",
 		post: "",
 		source: "",
-		picture: "dicaprio.jpg",
+		picture: "fakt.jpg",
 		answers: [{
 				correct: true,
 				text: "Miesza aktora i postać, którą gra.",
