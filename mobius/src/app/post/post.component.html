@@ -14,15 +14,16 @@
   }
 </style>
 
-<div *ngIf="!showPost" >{{loader}}<div>
-<div *ngIf="showPost">
+<!-- <div *ngIf="!showPost" >{{loader}}<div> -->
+<div >
   <img src="/assets/pysk.png" class="person-img" style="display:inline-block">
 
   <div  [ngClass]="'card mb-3 '+ postTypeSelector[postType]"  style="max-width: 80rem; display:inline-block">
     <!-- <div>{{postTypeSelector[postType]}}</div> -->
       <!-- <div class="card-header"></div> -->
-      <div class="card-body">
-        <p class="card-text"><b>{{person}}: </b> {{text}}</p>
+      <div class="card-body"> 
+        <div *ngIf="showPost" class="card-text"><b>{{person}}: </b> {{text}}</div>
+        <div width="400" *ngIf="!showPost" >{{loader}}</div>
       </div>
   </div>
 </div>
