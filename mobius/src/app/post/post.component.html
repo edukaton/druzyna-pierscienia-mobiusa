@@ -18,6 +18,9 @@
   .bg-warning {
     background-color: rgba(0, 0, 0, 0.2) !important;
   }
+  .img-fluid{
+    max-height:400px;
+  }
 </style>
 
 <div >
@@ -31,9 +34,9 @@
         <div width="400" *ngIf="!showPost" >
           {{loader}}
         </div>
-        <div ngIf="video">
-          <iframe width="1535"
-          height="761"
+        <div *ngIf="video">
+          <iframe width="800"
+          height="600"
           [src]="video"
           frameborder="0"
           allow="autoplay;

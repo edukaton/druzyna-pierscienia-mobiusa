@@ -30,6 +30,7 @@ export class PostComponent implements OnInit {
 
   ngOnInit() {
     //Typing animation
+    console.log(this.video);
     const timerId = setInterval(() => {
       this.loader=this.loader.length==4?".":this.loader+='.';
       this.loaderCounter+=1;
