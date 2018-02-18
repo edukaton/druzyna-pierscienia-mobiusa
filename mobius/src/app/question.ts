@@ -9,7 +9,7 @@ export class Question {
   post: string;
   source: string;
   answers: Answer[];
-  conclusion: string;
+  conclusion?: string;
   picture?: string;
   pysk?:string;
   video?:string;
