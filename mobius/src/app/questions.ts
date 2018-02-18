@@ -28,7 +28,8 @@ export const QUESTIONS: Question[] = [
 			},
 		],
 		conclusion: "Tusk tak naprawdę nie odpowiedział na krytykę, tylko zbył ją żartem. Wykorzystał przy tym to, że “wizja” może znaczyć coś innego niż to co mieli na myśli jego krytycy. (opcja: to się nazywa ekwiwokacja)",
-	  video: "https://youtu.be/PXBQnw2zs1A"
+	  videoLink: "https://youtu.be/PXBQnw2zs1A",
+	  video: "https://www.youtube.com/embed/PXBQnw2zs1A?enablejsapi=1&origin=http://example.com"
   },
   {
 		person: "Ojciec Rydzyk",
@@ -61,7 +62,8 @@ export const QUESTIONS: Question[] = [
 				reply: "Zdecydowanie!"
 			}
 		],
-		video: "https://www.youtube.com/embed/4cqFp_lvb0o",
+		videoLink: "https://www.youtube.com/embed/4cqFp_lvb0o",
+		video: "https://www.youtube.com/embed/4cqFp_lvb0o?enablejsapi=1&origin=http://example.com",
     conclusion: "Tu są dwa główne problemy. Często politycy udają że ich oponenci powiedzieli coś dużo bardziej radykalnego, żeby łatwiej z tym dyskutować. Często też ludzie udają że są tylko dwie opcje do wyboru. Na przykład fajnie by było na początku tej gry mieć jakieś inne opcje do wyboru niż Kaczor i Donald. ;)"
 	},
   {
@@ -134,7 +136,8 @@ export const QUESTIONS: Question[] = [
 				reply: "huh?"
 			},
 		],
-		video: "https://youtu.be/3hM70BC2qQI",
+		videoLink: "https://youtu.be/3hM70BC2qQI",
+		video: "https://www.youtube.com/embed/3hM70BC2qQI?enablejsapi=1&origin=http://example.com",
     conclusion: "Uważaj na tytuły, które są dużo bardziej sensacyjne niż treść. Wiele osób czyta tylko tytuły a potem wydaje im się, że Leo DiCaprio został zgwałcony przez niedźwiedzia. A nie został, kto oglądał ten wie:)"
 	},
 	{
@@ -203,7 +206,8 @@ export const QUESTIONS: Question[] = [
 				reply: "Nagroda Nobla to prestiżowe wyróżnienie dla naukowców, pisarzy, lekarzy i działaczy społecznych."
 			},
 		],
-		video: "https://www.youtube.com/watch?v=hLqg-GFm1X4"
+		videoLink: "https://www.youtube.com/watch?v=hLqg-GFm1X4",
+		video: "https://www.youtube.com/embed/hLqg-GFm1X4?enablejsapi=1&origin=http://example.com",
 	},
 	{
 		person: "Pudelek",
@@ -280,7 +284,8 @@ export const QUESTIONS: Question[] = [
 				reply: "Kręcisz bekę."
 			},
 		],
-		video: "https://youtu.be/OlE4P04t_Ag",
+		videoLink: "https://youtu.be/OlE4P04t_Ag",
+		video: "https://www.youtube.com/embed/OlE4P04t_Ag?enablejsapi=1&origin=http://example.com",
     conclusion: "Nie ma to jak dodatkowe informacje napisane drobnym druczkiem. Pół miliona osób wybrało, ale tylko niektórzy z nich wybrali Pepsi. (zbliżenie na ramkę) Jak na dobrowolną sondę organizowaną przez Pepsi, to raczej słaby wynik."
 	},
 ];

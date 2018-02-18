@@ -13,4 +13,5 @@ export class Question {
   picture?: string;
   pysk?:string;
   video?:string;
+  videoLink?:string;
 }
