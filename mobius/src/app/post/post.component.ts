@@ -12,7 +12,7 @@ export class PostComponent implements OnInit {
   @Input() links: string[];
   @Input() pysk: string;
   @Input() postType: string;
-
+  @Input() video: string;
   //variables needed for typing animation
   loader:string=".";
   loaderCounter:number=0;

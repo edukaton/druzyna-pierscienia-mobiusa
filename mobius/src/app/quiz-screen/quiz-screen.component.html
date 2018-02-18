@@ -21,6 +21,6 @@
 
 
   <div *ngIf="showConclusion" >
-    <app-post [person]="'Rozwiązanie'" [text]="question.conclusion"  [postType]="'conclusion'" ></app-post>
+    <app-post [person]="'Rozwiązanie'" [text]="question.conclusion" [video]="question.video" [postType]="'conclusion'" ></app-post>
     <app-post [person]="'Twoja Mama'" [text]="'Ktoś inny nie ma racji w INTERNECIE! Kliknij tu!!1'"  [postType]="'answer'" (click)='changeQuestion(1)'></app-post>
   </div>
