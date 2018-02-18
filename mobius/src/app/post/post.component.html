@@ -25,13 +25,19 @@
   <img *ngIf="postType=='question'"  [src]="'assets/pyski/'+pysk" class="person-img" style="display:inline-block">
 
   <div  [ngClass]="'card mb-3 '+ postTypeSelector[postType]"  style="max-width: 80rem; display:inline-block">
-    <!-- <div>{{postTypeSelector[postType]}}</div> -->
-
       <div class="card-body">
         <div *ngIf="showPost" class="card-text"><b>{{person}}: </b> {{text}}</div>
-        <div *ngIf='picture'><img  [src]="'assets/questions/'+picture"/></div>
+        <div *ngIf='picture'><img  [src]="'assets/questions/'+picture" class="img-fluid" /></div>
         <div width="400" *ngIf="!showPost" >
           {{loader}}
+        </div>
+        <div *ngIf="video">
+          <iframe width="1535"
+          height="761"
+          [src]="video"
+          frameborder="0"
+          allow="autoplay;
+          encrypted-media"></iframe>
         </div>
       </div>
   </div>

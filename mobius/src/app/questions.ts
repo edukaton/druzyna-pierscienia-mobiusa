@@ -1,6 +1,31 @@
 import { Question, Answer } from './question';
 
 export const QUESTIONS: Question[] = [{
+		person: "Bank",
+		pysk:"Bank.jpg",
+		post: "",
+		source: "",
+		picture: "malysz.jpg",
+		answers: [{
+				correct: true,
+				text: "Małysz nie jest ekspertem od bankowości.",
+				reply: "Masz rację."
+			},
+			{
+				correct: false,
+				text: "Czerwone karty są lamerskie.",
+				reply: "A ja mam. Usuwam Cię ze znajomych."
+			},
+			{
+				correct: false,
+				text: "Małysz jest kiepskim skoczkiem.",
+				reply: "Usuwam Cie ze znajomych i moja ciocia też."
+			},
+		],
+		video: "https://youtu.be/cJXe-kIKVbQ",
+    conclusion: "W reklamach możemy często spotkać zobaczyć ludzi znanych, którzy niekoniecznie znają się na tym co reklamują. Reklamodawcy mają nadzieję, że wybierzemy ich produkt, bo czujemy się emocjonalnie związani z osobami w nich występującymi. Przykładów takich reklam można w sieci znaleźć całe mnóstwo. No chyba, że Chuck Norris. On się podobno zna na wszystkim."
+	},
+  {
 		person: "Ojciec Rydzyk",
 		pysk:"Ojciec_Rydzyk.jpg",
 		post: "Ludzie pokazują palcami, jakim ja samochodem jeżdżę. Że Mercedesem klasy S. A niby czym mam jeździć? Na krowie mam jeździć? Głupoty takie gadają... mogę na krowie, ale gdzie ja bym tę krowę trzymał w Radiu Maryja?",
@@ -31,7 +56,8 @@ export const QUESTIONS: Question[] = [{
 				reply: "Zdecydowanie!"
 			}
 		],
-		conclusion: "Odpowiedź c i e - Tu są dwa główne problemy. Często politycy udają że ich oponenci powiedzieli coś dużo bardziej radykalnego, żeby łatwiej z tym dyskutować. Często też ludzie udają że są tylko dwie opcje do wyboru. Na przykład fajnie by było na początku tej gry mieć jakieś inne opcje do wyboru niż Kaczor i Donald. ;)"
+		video: "https://www.youtube.com/embed/4cqFp_lvb0o",
+    conclusion: "Tu są dwa główne problemy. Często politycy udają że ich oponenci powiedzieli coś dużo bardziej radykalnego, żeby łatwiej z tym dyskutować. Często też ludzie udają że są tylko dwie opcje do wyboru. Na przykład fajnie by było na początku tej gry mieć jakieś inne opcje do wyboru niż Kaczor i Donald. ;)"
 	},
 	{
 		person: "Wujek Staszek",
@@ -106,7 +132,8 @@ export const QUESTIONS: Question[] = [{
 				reply: "huh?"
 			},
 		],
-		conclusion: "Uważaj na tytuły, które są dużo bardziej sensacyjne niż treść. Wiele osób czyta tylko tytuły a potem wydaje im się, że Leo DiCaprio został zgwałcony przez niedźwiedzia. A nie został, kto oglądał ten wie:"
+		video: "https://youtu.be/3hM70BC2qQI",
+    conclusion: "Uważaj na tytuły, które są dużo bardziej sensacyjne niż treść. Wiele osób czyta tylko tytuły a potem wydaje im się, że Leo DiCaprio został zgwałcony przez niedźwiedzia. A nie został, kto oglądał ten wie:)"
 	},
 	{
 		person: "Krystyna Pawłowicz",
@@ -126,7 +153,7 @@ export const QUESTIONS: Question[] = [{
 			},
 			{
 				correct: false,
-				text: "Dobrze mówi, polac jej.",
+				text: "Dobrze mówi, polać jej.",
 				reply: "Usuwam Cię ze znajomych."
 			},
 		    {
@@ -174,31 +201,7 @@ export const QUESTIONS: Question[] = [{
 				reply: "Nagroda Nobla to prestiżowe wyróżnienie dla naukowców, pisarzy, lekarzy i działaczy społecznych."
 			},
 		],
-		conclusion: "[film]"
-	},
-	{
-		person: "Bank",
-		pysk:"Bank.jpg",
-		post: "",
-		source: "",
-		picture: "malysz.jpg",
-		answers: [{
-				correct: true,
-				text: "Małysz nie jest ekspertem od bankowości.",
-				reply: "Masz rację."
-			},
-			{
-				correct: false,
-				text: "Czerwone karty są lamerskie.",
-				reply: "A ja mam. Usuwam Cię ze znajomych."
-			},
-			{
-				correct: false,
-				text: "Małysz jest kiepskim skoczkiem.",
-				reply: "Usuwam Cie ze znajomych i moja ciocia też."
-			},
-		],
-		conclusion: "W reklamach możemy często spotkać zobaczyć ludzi znanych, którzy niekoniecznie znają się na tym co reklamują. Reklamodawcy mają nadzieję, że wybierzemy ich produkt, bo czujemy się emocjonalnie związani z osobami w nich występującymi. Przykładów takich reklam można w sieci znaleźć całe mnóstwo. No chyba, że Chuck Norris. On się podobno zna na wszystkim."
+		video: "https://www.youtube.com/watch?v=hLqg-GFm1X4"
 	},
 	{
 		person: "Pudelek",
@@ -248,7 +251,7 @@ export const QUESTIONS: Question[] = [{
 			{
 				correct: true,
 				text: "To czy jesteś za postępowaniem policji czy przeciw nie da się w tej sondzie oddzielić od tego czy uważasz, że wszyscy są równi wobec prawa.",
-				reply: "Prosto w punkt. Jestes mózgiem. <3"
+				reply: "Prosto w punkt. Jesteś mózgiem. <3"
 			},
 		],
 		conclusion: "Takie manipulacje zdarzają się często. Nawet w ustawach politycy często mieszają popularne i niepopularne zmiany, żeby podzielić opozycję."
@@ -275,6 +278,7 @@ export const QUESTIONS: Question[] = [{
 				reply: "Kręcisz bekę."
 			},
 		],
-		conclusion: "Nie ma to jak dodatkowe informacje napisane drobnym druczkiem. Pół miliona osób wybrało, ale tylko niektórzy z nich wybrali Pepsi. (zbliżenie na ramkę) Jak na dobrowolną sondę organizowaną przez Pepsi, to raczej słaby wynik."
+		video: "https://youtu.be/OlE4P04t_Ag",
+    conclusion: "Nie ma to jak dodatkowe informacje napisane drobnym druczkiem. Pół miliona osób wybrało, ale tylko niektórzy z nich wybrali Pepsi. (zbliżenie na ramkę) Jak na dobrowolną sondę organizowaną przez Pepsi, to raczej słaby wynik."
 	},
 ];

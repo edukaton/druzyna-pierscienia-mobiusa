@@ -19,7 +19,7 @@
 
 
   <div *ngIf="showConclusion" >
-    <app-post [text]="question.conclusion"  [postType]="'conclusion'" ></app-post>
+    <app-post [person]="'Rozwiązanie'" [text]="question.conclusion" [video]="question.video" [postType]="'conclusion'" ></app-post>
 
     <app-post *ngIf="currentQuestionId < totalQuestions - 1" [person]="'Twoja Mama'" [text]="'Ktoś inny nie ma racji w INTERNECIE! Kliknij tu!!1'"  [postType]="'answer'" (click)='changeQuestion(1)'></app-post>
     <a *ngIf="currentQuestionId == totalQuestions - 1" [routerLink]="['/end', score]">
