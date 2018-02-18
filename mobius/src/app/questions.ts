@@ -31,7 +31,7 @@ export const QUESTIONS: Question[] = [{
 				reply: "Zdecydowanie!"
 			}
 		],
-		conclusion: "Odpowiedź c i e - Tu są dwa główne problemy. Często politycy udają że ich oponenci powiedzieli coś dużo bardziej radykalnego, żeby łatwiej z tym dyskutować. Często też ludzie udają że są tylko dwie opcje do wyboru. Na przykład fajnie by było na początku tej gry mieć jakieś inne opcje do wyboru niż Kaczor i Donald. ;)"
+		video: "https://www.youtube.com/embed/4cqFp_lvb0o"
 	},
 	{
 		person: "Wujek Staszek",
@@ -106,7 +106,7 @@ export const QUESTIONS: Question[] = [{
 				reply: "huh?"
 			},
 		],
-		conclusion: "Uważaj na tytuły, które są dużo bardziej sensacyjne niż treść. Wiele osób czyta tylko tytuły a potem wydaje im się, że Leo DiCaprio został zgwałcony przez niedźwiedzia. A nie został, kto oglądał ten wie:"
+		video: "https://youtu.be/3hM70BC2qQI"
 	},
 	{
 		person: "Krystyna Pawłowicz",
@@ -126,7 +126,7 @@ export const QUESTIONS: Question[] = [{
 			},
 			{
 				correct: false,
-				text: "Dobrze mówi, polac jej.",
+				text: "Dobrze mówi, polać jej.",
 				reply: "Usuwam Cię ze znajomych."
 			},
 		    {
@@ -174,7 +174,7 @@ export const QUESTIONS: Question[] = [{
 				reply: "Nagroda Nobla to prestiżowe wyróżnienie dla naukowców, pisarzy, lekarzy i działaczy społecznych."
 			},
 		],
-		conclusion: "[film]"
+		video: "https://www.youtube.com/watch?v=hLqg-GFm1X4"
 	},
 	{
 		person: "Bank",
@@ -198,7 +198,7 @@ export const QUESTIONS: Question[] = [{
 				reply: "Usuwam Cie ze znajomych i moja ciocia też."
 			},
 		],
-		conclusion: "W reklamach możemy często spotkać zobaczyć ludzi znanych, którzy niekoniecznie znają się na tym co reklamują. Reklamodawcy mają nadzieję, że wybierzemy ich produkt, bo czujemy się emocjonalnie związani z osobami w nich występującymi. Przykładów takich reklam można w sieci znaleźć całe mnóstwo. No chyba, że Chuck Norris. On się podobno zna na wszystkim."
+		video: "https://youtu.be/cJXe-kIKVbQ"
 	},
 	{
 		person: "Pudelek",
@@ -275,6 +275,6 @@ export const QUESTIONS: Question[] = [{
 				reply: "Kręcisz bekę."
 			},
 		],
-		conclusion: "Nie ma to jak dodatkowe informacje napisane drobnym druczkiem. Pół miliona osób wybrało, ale tylko niektórzy z nich wybrali Pepsi. (zbliżenie na ramkę) Jak na dobrowolną sondę organizowaną przez Pepsi, to raczej słaby wynik."
+		video: "https://youtu.be/OlE4P04t_Ag"
 	},
 ];
