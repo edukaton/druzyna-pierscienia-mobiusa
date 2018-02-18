@@ -12,7 +12,8 @@ const DELAY = 3000;
 export class QuizScreenComponent implements OnInit {
 
   currentQuestionId: number = 0;
-  score: number = 50;
+  score: number = 0;
+  allCorrectPerQuestion: boolean;
   question: Question;
   totalQuestions: number = QUESTIONS.length;
 
@@ -35,6 +36,7 @@ export class QuizScreenComponent implements OnInit {
     this.question = question;
     this.showAnswers = false;
     this.showConclusion = false;
+    this.allCorrectPerQuestion = true;
     this.comments = [];
     this.activeAnswers = this.question.answers;
 
@@ -70,13 +72,17 @@ export class QuizScreenComponent implements OnInit {
       });
     }, DELAY);
 
+    if (!answer.correct) {
+      this.allCorrectPerQuestion = false;
+    }
+
     this.activeAnswers = this.activeAnswers
       .filter((x) => x.text != answer.text);
 
     setTimeout(() => {
-      this.score += (2 * answer.correct - 1);
       this.correctAnswersLeft -= answer.correct;
       if (this.correctAnswersLeft == 0) {
+        this.score += +this.allCorrectPerQuestion;
         this.showConclusion = true;
       } else {
         this.showAnswers = true;

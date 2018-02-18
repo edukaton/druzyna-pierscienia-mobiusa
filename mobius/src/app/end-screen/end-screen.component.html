@@ -1,3 +1,10 @@
-<p>
-  end-screen works!
-</p>
+<p>Twój wynik: {{score}}</p>
+
+<a [routerLink]="['/authors']" routerLinkActive="active" href="#">
+  <div *ngIf="score >= threshold">
+    <img src="assets/screen_end_good.png" class="img-fluid clickable" alt="Wynik: Jesteś jednym z oświeconych!">
+  </div>
+  <div *ngIf="score < threshold">
+    <img src="assets/screen_end_bad.png" class="img-fluid clickable" alt="Wynik: Jesteś częścią szarej masy!">
+  </div>
+</a>

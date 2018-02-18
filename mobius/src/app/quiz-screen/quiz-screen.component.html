@@ -2,8 +2,6 @@
 <div>Postęp: {{currentQuestionId}} / {{totalQuestions}}
 </div>
 
-<div>Liczba znajomych: {{score}}</div>
-
   <div *ngIf="question" style="margin-top:20px">
     <app-post [person]="question.person" [pysk]="question.pysk" [picture]="question.picture"[text]="question.post" [postType]="'question'"></app-post>
 
@@ -22,5 +20,10 @@
 
   <div *ngIf="showConclusion" >
     <app-post [person]="'Rozwiązanie'" [text]="question.conclusion" [video]="question.video" [postType]="'conclusion'" ></app-post>
-    <app-post [person]="'Twoja Mama'" [text]="'Ktoś inny nie ma racji w INTERNECIE! Kliknij tu!!1'"  [postType]="'answer'" (click)='changeQuestion(1)'></app-post>
+
+    <app-post *ngIf="currentQuestionId < totalQuestions - 1" [person]="'Twoja Mama'" [text]="'Ktoś inny nie ma racji w INTERNECIE! Kliknij tu!!1'"  [postType]="'answer'" (click)='changeQuestion(1)'></app-post>
+    <a *ngIf="currentQuestionId == totalQuestions - 1" [routerLink]="['/end', score]">
+      <app-post [person]="'Twoja Mama'" [text]="'Już chyba wiem czy ogarniasz internetowe manipulacje... zobacz tu!'"  [postType]="'answer'"></app-post>
+    </a>
+
   </div>
