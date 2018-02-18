@@ -11,17 +11,17 @@ export class PostComponent implements OnInit {
   @Input() picture: string;
   @Input() links: string[];
   @Input() postType: string;
-  
+
   //variables needed for typing animation
   loader:string=".";
   loaderCounter:number=0;
   showPost:boolean=false;
   //picture url
-  pictureUrl:string='assets/pyski/';  
+  pictureUrl:string='assets/pyski/';
   postTypeSelector:any = {
     "question":"bg-primary text-white",
     "otherPerson":"bg-primary text-white",
-    "answer":"bg-light",
+    "answer":"bg-light clickable",
     "conclusion":"bg-primary text-white",
     "Ty":"bg-warning"}
   constructor() {
