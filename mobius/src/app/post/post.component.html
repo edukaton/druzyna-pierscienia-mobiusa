@@ -12,13 +12,18 @@
     margin-right:10px;
     margin-bottom:10px;
   }
+  .bg-light:hover{
+    background-color: rgba(0, 0, 0, 0.2) !important; 
+  }
+  .bg-warning {
+    background-color: rgba(0, 0, 0, 0.2) !important; 
+  }
 </style>
 
 <div >
   <img [src]="pictureUrl" class="person-img" style="display:inline-block">
   <div  [ngClass]="'card mb-3 '+ postTypeSelector[postType]"  style="max-width: 80rem; display:inline-block">
     <!-- <div>{{postTypeSelector[postType]}}</div> -->
-      <!-- <div class="card-header"></div> -->
       <div class="card-body">
         <div *ngIf="showPost" class="card-text"><b>{{person}}: </b> {{text}}</div>
         <div width="400" *ngIf="!showPost" >

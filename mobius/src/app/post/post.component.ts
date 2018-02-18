@@ -23,7 +23,7 @@ export class PostComponent implements OnInit {
     "otherPerson":"bg-primary text-white",
     "answer":"bg-light",
     "conclusion":"bg-primary text-white",
-    "Ty":"bg-warning text-white"}
+    "Ty":"bg-warning"}
   constructor() {
   }
 
@@ -43,9 +43,9 @@ export class PostComponent implements OnInit {
       this.postType = "Ty";
     }
     if (this.postType=="question" || this.postType=="otherPerson"){this.pictureUrl+=this.person.replace(' ','_')+'.jpg'}
-    else if (this.postType=="Ty"){this.pictureUrl+='pysk.png'}
+    else if (this.postType=="Ty"){this.pictureUrl+='cat.jpeg'}
     else if (this.postType=="answer"){this.pictureUrl+='question.png'}
-    console.log("picture",this.pictureUrl);
+    //console.log("picture",this.pictureUrl);
   }
 
 }
