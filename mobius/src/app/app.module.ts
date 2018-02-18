@@ -8,6 +8,7 @@ import { StartScreenComponent } from './start-screen/start-screen.component';
 import { QuizScreenComponent } from './quiz-screen/quiz-screen.component';
 import { EndScreenComponent } from './end-screen/end-screen.component';
 import { PostComponent } from './post/post.component';
+import { AuthorsComponent } from './authors/authors.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { PostComponent } from './post/post.component';
     StartScreenComponent,
     QuizScreenComponent,
     EndScreenComponent,
-    PostComponent
+    PostComponent,
+    AuthorsComponent
   ],
   imports: [
     BrowserModule,
@@ -25,6 +27,7 @@ import { PostComponent } from './post/post.component';
       {path:'start', component:StartScreenComponent},
       {path:'quiz', component:QuizScreenComponent},
       {path:'end', component:EndScreenComponent},
+      {path:'authors', component:AuthorsComponent},
       {path:'', redirectTo :'start', pathMatch:'full' },
       {path:'**', redirectTo :'start', pathMatch:'full' },
     ])
