@@ -17,7 +17,7 @@ export class PostComponent implements OnInit {
   loaderCounter:number=0;
   showPost:boolean=false;
   //picture url
-  pictureUrl:string='/assets/pyski/';  
+  pictureUrl:string='assets/pyski/';  
   postTypeSelector:any = {
     "question":"bg-primary text-white",
     "otherPerson":"bg-primary text-white",
