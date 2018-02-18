@@ -1,26 +1,25 @@
 
-<div>Pytanie numer: {{currentQuestionId}}</div>
-<div>Liczba znajomych: {{score}}</div>
-<div>
-  <button (click)='changeQuestion(-1)'> PREVIOUS</button>
-  <button (click)='changeQuestion(1)'>NEXT</button>
+<div>Postęp: {{currentQuestionId}} / {{totalQuestions}}
 </div>
+
+<div>Liczba znajomych: {{score}}</div>
 
   <div *ngIf="question" style="margin-top:12px">
       <app-post [person]="question.person" [picture]="question.picture"[text]="question.post" [postType]="'question'"></app-post>
   </div>
-  
+
   <div *ngFor="let comment of comments">
       <app-post [person]="comment.person" [text]="comment.text" [postType]="'otherPerson'"></app-post>
   </div>
 
   <div *ngIf="showAnswers">
     <div *ngFor="let answer of activeAnswers" (click)="pickAnswer(answer)"  >
-      <app-post [person]="'Odpowiedz'" [text]="answer.text" [postType]="'answer'"></app-post>
+      <app-post [person]="'Odpowiedź'" [text]="answer.text" [postType]="'answer'"></app-post>
     </div>
   </div>
 
-  <div *ngIf="showConclusion" class="alert alert-info">
+  <div *ngIf="showConclusion">
     <app-post [text]="question.conclusion"  [postType]="'conclusion'" ></app-post>
-  </div>
 
+    <app-post [person]="'Twoja Mama'" [text]="'Ktoś inny nie ma racji w INTERNECIE! Kliknij tu!!1'"  [postType]="'answer'" (click)='changeQuestion(1)'></app-post>
+  </div>
