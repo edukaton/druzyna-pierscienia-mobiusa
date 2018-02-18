@@ -11,9 +11,12 @@ export class PostComponent implements OnInit {
   @Input() picture: string;
   @Input() links: string[];
   @Input() postType: string;
+  
+  //variables needed for typing animation
   loader:string=".";
   loaderCounter:number=0;
   showPost:boolean=false;
+  
   postTypeSelector:any = {
     "question":"bg-primary text-white",
     "otherPerson":"bg-primary text-white",
@@ -24,6 +27,8 @@ export class PostComponent implements OnInit {
   }
 
   ngOnInit() {
+
+    //Typing animation
     const timerId = setInterval(() => {
       this.loader=this.loader.length==4?".":this.loader+='.';
       this.loaderCounter+=1;
