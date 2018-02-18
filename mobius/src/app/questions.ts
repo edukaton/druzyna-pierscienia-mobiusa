@@ -244,4 +244,27 @@ export const QUESTIONS: Question[] = [{
 		],
 		conclusion: "Takie manipulacje zdarzają się często. Nawet w ustawach politycy często mieszają popularne i niepopularne zmiany, żeby podzielić opozycję."
 	},
+  {
+		person: "Pepsi",
+		post: "",
+		picture: "pepsi.png",
+		source: "",
+		answers: [{
+				correct: false,
+				text: "Fajne kolorki.",
+				reply: ":D"
+			},
+			{
+				correct: true,
+				text: "Pół miliona wybrało, ale czy wybrało Pepsi?",
+				reply: "Dobre pytanie!"
+			},
+			{
+				correct: false,
+				text: "Ale nie jesteśmy na plaży.",
+				reply: "Kręcisz bekę."
+			},
+		],
+		conclusion: "Nie ma to jak dodatkowe informacje napisane drobnym druczkiem. Pół miliona osób wybrało, ale tylko niektórzy z nich wybrali Pepsi. (zbliżenie na ramkę) Jak na dobrowolną sondę organizowaną przez Pepsi, to raczej słaby wynik."
+	},
 ];
