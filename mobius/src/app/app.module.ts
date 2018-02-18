@@ -26,7 +26,7 @@ import { AuthorsComponent } from './authors/authors.component';
     RouterModule.forRoot([
       {path:'start', component:StartScreenComponent},
       {path:'quiz', component:QuizScreenComponent},
-      {path:'end', component:EndScreenComponent},
+      {path:'end/:score', component:EndScreenComponent},
       {path:'authors', component:AuthorsComponent},
       {path:'', redirectTo :'start', pathMatch:'full' },
       {path:'**', redirectTo :'start', pathMatch:'full' },
