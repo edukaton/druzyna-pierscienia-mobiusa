@@ -28,7 +28,7 @@ export const QUESTIONS: Question[] = [
 			},
 		],
 		conclusion: "Tusk tak naprawdę nie odpowiedział na krytykę, tylko zbył ją żartem. Wykorzystał przy tym to, że “wizja” może znaczyć coś innego niż to co mieli na myśli jego krytycy. (opcja: to się nazywa ekwiwokacja)",
-	  videoLink: "https://youtu.be/PXBQnw2zs1A",
+	  videoLink: "PXBQnw2zs1A",
 	  video: "https://www.youtube.com/embed/PXBQnw2zs1A?enablejsapi=1&origin=http://example.com"
   },
   {
@@ -62,7 +62,7 @@ export const QUESTIONS: Question[] = [
 				reply: "Zdecydowanie!"
 			}
 		],
-		videoLink: "https://www.youtube.com/embed/4cqFp_lvb0o",
+		videoLink: "4cqFp_lvb0o",
 		video: "https://www.youtube.com/embed/4cqFp_lvb0o?enablejsapi=1&origin=http://example.com",
     conclusion: "Tu są dwa główne problemy. Często politycy udają że ich oponenci powiedzieli coś dużo bardziej radykalnego, żeby łatwiej z tym dyskutować. Często też ludzie udają że są tylko dwie opcje do wyboru. Na przykład fajnie by było na początku tej gry mieć jakieś inne opcje do wyboru niż Kaczor i Donald. ;)"
 	},
@@ -88,7 +88,8 @@ export const QUESTIONS: Question[] = [
 				reply: "Usuwam Cie ze znajomych i moja ciocia też."
 			},
 		],
-		video: "https://youtu.be/cJXe-kIKVbQ",
+		videoLink: "cJXe-kIKVbQ",
+		video:"https://www.youtube.com/embed/cJXe-kIKVbQ?enablejsapi=1&origin=http://example.com",
     conclusion: "W reklamach możemy często spotkać zobaczyć ludzi znanych, którzy niekoniecznie znają się na tym co reklamują. Reklamodawcy mają nadzieję, że wybierzemy ich produkt, bo czujemy się emocjonalnie związani z osobami w nich występującymi. Przykładów takich reklam można w sieci znaleźć całe mnóstwo. No chyba, że Chuck Norris. On się podobno zna na wszystkim."
 	},
 	{
@@ -136,7 +137,7 @@ export const QUESTIONS: Question[] = [
 				reply: "huh?"
 			},
 		],
-		videoLink: "https://youtu.be/3hM70BC2qQI",
+		videoLink: "3hM70BC2qQI",
 		video: "https://www.youtube.com/embed/3hM70BC2qQI?enablejsapi=1&origin=http://example.com",
     conclusion: "Uważaj na tytuły, które są dużo bardziej sensacyjne niż treść. Wiele osób czyta tylko tytuły a potem wydaje im się, że Leo DiCaprio został zgwałcony przez niedźwiedzia. A nie został, kto oglądał ten wie:)"
 	},
@@ -206,7 +207,7 @@ export const QUESTIONS: Question[] = [
 				reply: "Nagroda Nobla to prestiżowe wyróżnienie dla naukowców, pisarzy, lekarzy i działaczy społecznych."
 			},
 		],
-		videoLink: "https://www.youtube.com/watch?v=hLqg-GFm1X4",
+		videoLink: "hLqg-GFm1X4",
 		video: "https://www.youtube.com/embed/hLqg-GFm1X4?enablejsapi=1&origin=http://example.com",
 	},
 	{
@@ -284,7 +285,7 @@ export const QUESTIONS: Question[] = [
 				reply: "Kręcisz bekę."
 			},
 		],
-		videoLink: "https://youtu.be/OlE4P04t_Ag",
+		videoLink: "OlE4P04t_Ag",
 		video: "https://www.youtube.com/embed/OlE4P04t_Ag?enablejsapi=1&origin=http://example.com",
     conclusion: "Nie ma to jak dodatkowe informacje napisane drobnym druczkiem. Pół miliona osób wybrało, ale tylko niektórzy z nich wybrali Pepsi. (zbliżenie na ramkę) Jak na dobrowolną sondę organizowaną przez Pepsi, to raczej słaby wynik."
 	},

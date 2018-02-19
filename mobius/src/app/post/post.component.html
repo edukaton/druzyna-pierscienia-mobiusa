@@ -7,10 +7,25 @@
     border: 1px solid #dee2e6;
     padding: 0.1rem;
     border-radius: 50%;
-    height:70px;
-    width:70px;
+    height:64px;
+    width:64px;
     margin-right:10px;
     margin-bottom:10px;
+  
+  }
+ @media screen and (max-width: 300px) /* Mobile */ { 
+    .person-img{
+      height:42px;
+      width:42px;
+      margin-right:2px;
+    }
+  }
+  @media screen and (max-width: 400px) /* Mobile */ { 
+    .person-img{
+      height:50px;
+      width:50px;
+      margin-right:2px;
+    }
   }
   .bg-light:hover{
     background-color: rgba(0, 0, 0, 0.2) !important;
@@ -24,9 +39,13 @@
 </style>
 
 <div >
+  <table>
+<tr>
+<td style="max-width:70px;">
   <img *ngIf="postType!='question'"  [src]="pictureUrl" class="person-img" style="display:inline-block">
   <img *ngIf="postType=='question'"  [src]="'assets/pyski/'+pysk" class="person-img" style="display:inline-block">
-
+</td>
+<td>
   <div  [ngClass]="'card mb-3 '+ postTypeSelector[postType]"  style="max-width: 80rem; display:inline-block">
       <div class="card-body">
         <div *ngIf="showPost" class="card-text"><b>{{person}}: </b> {{text}}</div>
@@ -45,5 +64,8 @@
         </div>
       </div>
   </div>
+</td>
+</tr>
+  </table>
 </div>
 <!-- src="https://www.youtube.com/embed/cJXe-kIKVbQ?enablejsapi=1&origin=http://example.com" -->
