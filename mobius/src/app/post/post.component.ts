@@ -1,5 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
+import {BrowserModule, DomSanitizer} from '@angular/platform-browser'
 import { QuizScreenComponent } from './../quiz-screen/quiz-screen.component';
+import { SafeResourceUrl } from '@angular/platform-browser/src/security/dom_sanitization_service';
 @Component({
   selector: 'app-post',
   templateUrl: './post.component.html',
@@ -12,7 +14,7 @@ export class PostComponent implements OnInit {
   @Input() links: string[];
   @Input() pysk: string;
   @Input() postType: string;
-  @Input() video: string;
+  @Input() video: any;
   //variables needed for typing animation
   loader:string=".";
   loaderCounter:number=0;
@@ -25,12 +27,14 @@ export class PostComponent implements OnInit {
     "answer":"bg-light clickable",
     "conclusion":"bg-success text-white",
     "Ty":"bg-warning"}
-  constructor() {
+  constructor(private sanitizer: DomSanitizer) {
+  
   }
 
   ngOnInit() {
     //Typing animation
-  
+    this.video = this.sanitizer.bypassSecurityTrustResourceUrl(this.video);
+
     const timerId = setInterval(() => {
       this.loader=this.loader.length==4?".":this.loader+='.';
       this.loaderCounter+=1;
@@ -39,6 +43,7 @@ export class PostComponent implements OnInit {
         clearInterval(timerId);
       }
     },100);
+
     console.log("vid",this.video);
     //changes postType if the person is "Ty"
     if(this.person=="Ty") {

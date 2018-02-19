@@ -34,11 +34,15 @@
         <div width="400" *ngIf="!showPost" >
           {{loader}}
         </div>
-        <a [href]="video"  target="_blank">{{video}}</a>
-        <!-- <iframe id="player" type="text/html" width="800" height="600"src="video" frameborder="0"></iframe> -->
-        <!-- <div *ngIf="video">
-            <iframe id="player" type="text/html" width="800" height="580" [src]="video" frameborder="0"></iframe>
-        </div> -->
+        <div *ngIf="video?.changingThisBreaksApplicationSecurity" 
+          class="embed-responsive embed-responsive-16by9">
+          <iframe 
+            class="embed-responsive-item" 
+            id="player" type="text/html" 
+            [src]="video" 
+            frameborder="0">
+          </iframe>
+        </div>
       </div>
   </div>
 </div>
