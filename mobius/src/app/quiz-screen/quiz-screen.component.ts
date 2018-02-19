@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Question } from '../question';
 import { QUESTIONS } from '../questions';
 
-const DELAY = 3000;
+const DELAY = 900;
 
 @Component({
   selector: 'app-quiz-screen',
