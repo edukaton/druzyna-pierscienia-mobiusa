@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Question } from '../question';
 import { QUESTIONS } from '../questions';
 
-const DELAY = 900;
+const DELAY = 1000;
 
 @Component({
   selector: 'app-quiz-screen',
@@ -51,7 +51,7 @@ export class QuizScreenComponent implements OnInit {
       });
     }, DELAY);
 
-    window.setTimeout(() => { this.showAnswers = true; }, 2 * DELAY);
+    window.setTimeout(() => { this.showAnswers = true; }, 4 * DELAY);
   }
 
   pickAnswer(answer) {

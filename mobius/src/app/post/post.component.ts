@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, OnChanges,SimpleChanges } from '@angular/core';
 import {BrowserModule, DomSanitizer} from '@angular/platform-browser'
 import { QuizScreenComponent } from './../quiz-screen/quiz-screen.component';
 import { SafeResourceUrl } from '@angular/platform-browser/src/security/dom_sanitization_service';
@@ -7,7 +7,8 @@ import { SafeResourceUrl } from '@angular/platform-browser/src/security/dom_sani
   templateUrl: './post.component.html',
   styleUrls: ['./post.component.css']
 })
-export class PostComponent implements OnInit {
+export class PostComponent implements OnInit,OnChanges {
+ 
   @Input() person: string;
   @Input() text: string;
   @Input() picture: string;
@@ -30,7 +31,19 @@ export class PostComponent implements OnInit {
   constructor(private sanitizer: DomSanitizer) {
   
   }
+  ngOnChanges(changes: SimpleChanges): void {
+    //changes postType if the person is "Ty"
+    if(this.person=="Ty") {
+      this.postType = "Ty";
+    }
+    if (this.postType=="question" || this.postType=="otherPerson"){this.pictureUrl+=this.person.replace(' ','_')+'.jpg'}
+    else if (this.postType=="Ty"){this.pictureUrl+='cat.jpeg'}
+    else if (this.postType=="answer"){
+      this.person=="Twoja Mama"?  this.pictureUrl+='Twoja_Mama.jpg':this.pictureUrl+='question.png';
+    }
+    else if (this.postType=="conclusion"){this.pictureUrl+='Spock.jpg'}
 
+  }
   ngOnInit() {
     //Typing animation
     this.video = this.sanitizer.bypassSecurityTrustResourceUrl(this.video);
@@ -43,19 +56,7 @@ export class PostComponent implements OnInit {
         clearInterval(timerId);
       }
     },100);
-
-    console.log("vid",this.video);
-    //changes postType if the person is "Ty"
-    if(this.person=="Ty") {
-      this.postType = "Ty";
-    }
-    if (this.postType=="question" || this.postType=="otherPerson"){this.pictureUrl+=this.person.replace(' ','_')+'.jpg'}
-    else if (this.postType=="Ty"){this.pictureUrl+='cat.jpeg'}
-    else if (this.postType=="answer"){
-      this.person=="Twoja Mama"?  this.pictureUrl+='Twoja_Mama.jpg':this.pictureUrl+='question.png';
-    }
-    else if (this.postType=="conclusion"){this.pictureUrl+='Spock.jpg'}
-    //console.log("picture",this.pictureUrl);
+    //console.log("vid",this.video);
   }
 
 }
