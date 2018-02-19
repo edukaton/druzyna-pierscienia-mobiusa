@@ -209,6 +209,7 @@ export const QUESTIONS: Question[] = [
 		],
 		videoLink: "hLqg-GFm1X4",
 		video: "https://www.youtube.com/embed/hLqg-GFm1X4?enablejsapi=1&origin=http://example.com",
+		conclusion: "Nie będziemy sie rozpisywać obejrzyj wideo rozwiązaniem !",
 	},
 	{
 		person: "Pudelek",
